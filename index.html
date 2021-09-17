@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/"><i class="fas fa-paw"></i></a>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input id="input" type="text">
+      </div>
+      <a class="navbar__logo" href="/"><i class="fas fa-user-alt"></i></a>
+    </div>
+  </header>
+
+  <div class="main__container">
+    <div class="main__sidebar">
+      <div id="link__form" class="menu">
+        <a href="#">Form</a>
+      </div>
+      <div id="link__cards" class="menu">
+        <a href="#">Cards</a>
+      </div>
+
+    </div>
+
+    <div id="formSection" class="hidden">
+      <div class="main__form">
+        <form action="#" id="form" class="form">
+          <h1>FORM</h1>
+          <div class="inputs">
+            <label for="fullName">Full name</label>
+            <input id="fullName" type="text" placeholder="Full name">
+          </div>
+          <div class="inputs">
+            <label for="age">Age</label>
+            <input id="age" type="number" placeholder="Age">
+          </div>
+          <div class="inputs">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="email">
+          </div>
+          <div class="inputs">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="password">
+          </div>
+          <input type="submit" id="myBtn" class="button" value="Sign Up">
+
+        </form>
+      </div>
+    </div>
+
+    <div id="cardSection" class="show">
+      <div class="cards">
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p><b>FullName: </b><span id="fullName_span"></span></p>
+        <p><b>Age: </b><span id="age_span"></span></p>
+        <p><b>Email: </b><span id="email_span"></span></p>
+        <p><b>Password: </b><span id="password_span"></span></p>
+
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
