@@ -104,12 +104,12 @@ const password_spanDOM = document.querySelector("#password_span")
 
 
 btn.onclick = function () {
-    document.getElementById("form").reset();
     fullName_spanDOM.innerHTML = document.querySelector("#fullName").value
     age_spanDOM.innerHTML = document.querySelector("#age").value
     email_spanDOM.innerHTML = document.querySelector("#email").value
     password_spanDOM.innerHTML = document.querySelector("#password").value
     modal.style.display = "block";
+    document.getElementById("form").reset();
 }
 
 // When the user clicks on <span> (x), close the modal
